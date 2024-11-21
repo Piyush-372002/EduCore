@@ -136,9 +136,13 @@ const LoginPage = ({ role }) => {
                         }}
                     >
                         <Typography variant="h4" sx={{ mb: 2, color: "#2c2143" }}>
+                           <i><h1>
                             {role} Login
+
+                            </h1>
+                            </i> 
                         </Typography>
-                        <Typography variant="h7">
+                        <Typography variant="h6">
                             Welcome back! Please enter your details
                         </Typography>
                         <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 2 }}>
@@ -214,10 +218,10 @@ const LoginPage = ({ role }) => {
                                 }}
                             />
                             <Grid container sx={{ display: "flex", justifyContent: "space-between" }}>
-                                <FormControlLabel
+                                {/* <FormControlLabel
                                     control={<Checkbox value="remember" color="primary" />}
                                     label="Remember me"
-                                />
+                                /> */}
                                 <StyledLink href="#">
                                     Forgot password?
                                 </StyledLink>
@@ -232,21 +236,25 @@ const LoginPage = ({ role }) => {
                                     <CircularProgress size={24} color="inherit" />
                                     : "Login"}
                             </LightPurpleButton>
-                            <Button
+                            {/* <Button
                                 fullWidth
                                 onClick={guestModeHandler}
                                 variant="outlined"
                                 sx={{ mt: 2, mb: 3, color: "#7f56da", borderColor: "#7f56da" }}
                             >
                                 Login as Guest
-                            </Button>
+                            </Button> */}
+                            
                             {role === "Admin" &&
                                 <Grid container>
+                                    
                                     <Grid>
+                                    <br></br>
                                         Don't have an account?
                                     </Grid>
                                     <Grid item sx={{ ml: 2 }}>
                                         <StyledLink to="/Adminregister">
+                                        <br></br>
                                             Sign up
                                         </StyledLink>
                                     </Grid>

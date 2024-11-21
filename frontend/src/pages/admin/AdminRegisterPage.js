@@ -89,7 +89,7 @@ const AdminRegisterPage = () => {
                         }}
                     >
                         <Typography variant="h4" sx={{ mb: 2, color: "#2c2143" }}>
-                            Admin Register
+                            <h2>Admin Register</h2>
                         </Typography>
                         <Typography variant="h7">
                             Create your own school by registering as an admin.

@@ -13,6 +13,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../redux/userRelated/userHandle';
 import Popup from '../components/Popup';
+import Students from "../assets/bannr.png";
 
 const ChooseUser = ({ visitor }) => {
   const dispatch = useDispatch()
@@ -82,6 +83,7 @@ const ChooseUser = ({ visitor }) => {
     }
   }, [status, currentRole, navigate, currentUser]);
 
+
   return (
     <StyledContainer>
       <Container>
@@ -142,7 +144,7 @@ const ChooseUser = ({ visitor }) => {
 export default ChooseUser;
 
 const StyledContainer = styled.div`
-  background: linear-gradient(to bottom, #411d70, #19118b);
+  background: linear-gradient(to bottom, #2C6E49, #2C6E49);
   height: 120vh;
   display: flex;
   justify-content: center;
